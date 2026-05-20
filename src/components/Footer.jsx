@@ -20,9 +20,9 @@ const Footer = () => {
 
         <div className="footer-contact">
           <h3>Contact</h3>
-          <p>kiizaisaacalvin256@gmail.com</p>
-          <p>+256-789186476</p>
-          <Link to="/contact">Contact support</Link>
+          <p><span className="footer-icon" aria-hidden="true">📧</span> kiizaisaacalvin256@gmail.com</p>
+          <p><span className="footer-icon" aria-hidden="true">📞</span> +256-789186476</p>
+          <Link to="/contact"><span className="footer-icon" aria-hidden="true">💬</span> Contact support</Link>
         </div>
       </div>
 

@@ -13,19 +13,19 @@ const Careers = () => {
 
       <section className="section career-grid">
         <article className="career-card">
+          <h2>Mechanic internship</h2>
+          <p>Gain hands-on experience with roadside repairs, diagnostics, and app-based service coordination.</p>
+          <p><strong>Type:</strong> Internship</p>
+        </article>
+        <article className="career-card">
           <h2>Field mechanic</h2>
           <p>Deliver roadside assistance and repair services directly to customers across the city.</p>
           <p><strong>Location:</strong> Local region</p>
         </article>
         <article className="career-card">
-          <h2>Driver operations</h2>
-          <p>Coordinate technician dispatch, manage service routes, and keep response times fast.</p>
-          <p><strong>Location:</strong> Remote / hybrid</p>
-        </article>
-        <article className="career-card">
-          <h2>Customer support</h2>
-          <p>Support app users with booking, billing, and vehicle service guidance.</p>
-          <p><strong>Location:</strong> Remote</p>
+          <h2>Service mechanic</h2>
+          <p>Perform preventative maintenance, diagnostic checks, and in-app supported repair work.</p>
+          <p><strong>Location:</strong> Local region</p>
         </article>
       </section>
 

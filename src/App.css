@@ -362,6 +362,21 @@
   line-height: 1.8;
 }
 
+.footer-contact p,
+.footer-contact a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+}
+
 .footer-nav a,
 .footer-contact a {
   display: block;
