@@ -430,28 +430,57 @@
     display: inline-flex;
   }
 
-  .nav-links {
-    width: 100%;
+  .menu-backdrop {
     display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.42);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 15;
+  }
+
+  .menu-backdrop.open {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links {
+    width: 320px;
+    max-width: 88vw;
+    display: flex;
     flex-direction: column;
-    gap: 14px;
-    margin-top: 18px;
-    padding: 20px;
-    background: rgba(7, 15, 32, 0.98);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+    gap: 22px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 100px 24px 24px;
+    background: rgba(8, 12, 24, 0.98);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: -24px 0 80px rgba(0, 0, 0, 0.24);
+    transform: translateX(110%);
+    transition: transform 0.3s ease;
+    z-index: 20;
+    overflow-y: auto;
   }
 
   .nav-links.open {
-    display: flex;
+    transform: translateX(0);
   }
 
   .nav-links a {
     display: block;
     width: 100%;
-    padding: 10px 0;
+    padding: 14px 0;
     color: var(--text);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
   }
 
   .nav-links a::after {

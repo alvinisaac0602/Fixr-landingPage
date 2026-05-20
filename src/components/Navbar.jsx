@@ -33,6 +33,12 @@ const Navbar = () => {
         <span />
       </button>
 
+      <div
+        className={`menu-backdrop ${menuOpen ? 'open' : ''}`}
+        onClick={closeMenu}
+        aria-hidden="true"
+      />
+
       <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
         {links.map(link => (
           <NavLink
